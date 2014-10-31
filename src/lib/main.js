@@ -1,10 +1,11 @@
 ﻿// created by Jérémie Bertrand - http://laedit.net
 var buttons = require("sdk/ui/button/action");
 var tabs = require("sdk/tabs");
-var self = require("sdk/self");
+var data = require("sdk/self").data;
+var _ = require("sdk/l10n").get;
 
 var button = buttons.ActionButton({
-  id: "mozilla-link",
+  id: "TheOldReader-bookmark-button",
   label: "The Old Reader - Bookmark",
   icon: {
     "16": "./oldreadericon-16.png",
@@ -18,14 +19,14 @@ function handleClick(state) {
    var tab = tabs.activeTab;
 	if(/^http(?:s?)\:\/\/theoldreader\.com/i.test(tab.url))
 	{
-		tab.attach({
-			contentScript: "alert('If you were to bookmark The Old Reader with The Old Reader then the universe will fold in on itself and become a very large black hole.');"
-		});
+		 tab.attach({
+			 contentScript: "alert('" + _("theOldReaderSelfBookmarkMessage") + "');" 
+		 });
 		return false;
 	}
 	
 	tab.attach({
-      contentScriptFile: [self.data.url("add_to_reader.js"), self.data.url("bookmark.js")]
+      contentScriptFile: [data.url("add_to_reader.js"), data.url("bookmark.js")]
     });
 	
 }
