@@ -1,0 +1,10 @@
+{
+  "theOldReaderSelfBookmarkMessage": {
+    "message": "If you were to bookmark The Old Reader with The Old Reader then the universe will fold in on itself and become a very large black hole.",
+    "description": "Message when the user want to bookmark the old reader itself"
+  },
+  "addonDescription": {
+    "message": "Bookmark the current page or selection in The Old Reader (premium membership needed)",
+    "description": "addon description"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "The Old Reader Bookmark",
+  "version": "0.3",
+  "description": "__MSG_addonDescription__",
+  "homepage_url": "https://github.com/laedit/the-old-reader-bookmark/",
+  "default_locale": "en",
+
+  "icons": {
+    "16": "icons/oldreadericon-16.png",
+    "32": "icons/oldreadericon-32.png",
+    "48": "icons/oldreadericon-48.png",
+    "64": "icons/oldreadericon-67.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "jid1-sVBiH5VBQOq2TA@jetpack",
+      "strict_min_version": "48.0"
+    }
+  },
+
+  "permissions": [
+    "activeTab",
+    "<all_urls>"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+    "16": "icons/oldreadericon-16.png",
+    "32": "icons/oldreadericon-32.png",
+    "48": "icons/oldreadericon-48.png",
+    "64": "icons/oldreadericon-67.png"
+    },
+    "default_title": "The Old Reader - Bookmark",
+    "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background-script.js"]
+  }
+
+}

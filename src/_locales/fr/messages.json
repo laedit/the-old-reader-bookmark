@@ -1,0 +1,10 @@
+{
+  "theOldReaderSelfBookmarkMessage": {
+    "message": "Si vous étiez en train d'ajouter The Old Reader à vos bookmarks de The Old Reader alors l'univers va se replier sur lui même et devenir un très grand trou noir.",
+    "description": "Message when the user want to bookmark the old reader itself"
+  },
+  "addonDescription": {
+    "message": "Bookmark dans The Old Reader la page ou sélection courante (abonnement premium requis) ",
+    "description": "addon description"
+  }
+}
