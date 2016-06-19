@@ -8,6 +8,10 @@ if (typeof document.getSelection != "undefined") {
         }
         html = container.innerHTML;
     }
+    else
+    {
+        html = sel.toString();
+    }
 } else if (typeof document.selection != "undefined") {
     if (document.selection.type == "Text") {
         html = document.selection.createRange().htmlText;
