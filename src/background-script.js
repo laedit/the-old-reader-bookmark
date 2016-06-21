@@ -13,7 +13,7 @@ function handleClick(tab) {
         return false;
     }
 
-    browser.tabs.executeScript({ file: "getSelection.js" }, postToOldReadBookmarks);
+    browser.tabs.executeScript({ file: "content_scripts/getSelection.js" }, postToOldReadBookmarks);
 }
 
 function postToOldReadBookmarks(selections) {
@@ -21,7 +21,7 @@ function postToOldReadBookmarks(selections) {
     // custom page can't have script injected and can't submit form from their script
     browser.tabs.create({ index: currentTabIndex + 1, url: "https://theoldreader.com/bookmarks/bookmark" }, function (tab) {
         // https://bugzilla.mozilla.org/show_bug.cgi?id=1272890
-        browser.tabs.executeScript(tab.id, { file: "postNewBookmark.js" }, function () {
+        browser.tabs.executeScript(tab.id, { file: "content_scripts/postNewBookmark.js" }, function () {
             chrome.tabs.sendMessage(tab.id, {url: currentTabUrl, html: selections});
         });
     });
