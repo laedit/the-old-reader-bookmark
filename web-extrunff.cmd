@@ -2,7 +2,7 @@
 :: update web-ext
 call npm update -g web-ext
 
-echo Exit Code is %errorlevel%
+echo web-ext update exit code is %errorlevel%
 if "%ERRORLEVEL%" == "1" exit /B 1
 
 :: run web-ext
