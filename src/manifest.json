@@ -32,8 +32,7 @@
     "48": "icons/oldreadericon-48.png",
     "64": "icons/oldreadericon-67.png"
     },
-    "default_title": "The Old Reader - Bookmark",
-    "browser_style": true
+    "default_title": "The Old Reader - Bookmark"
   },
 
   "background": {
