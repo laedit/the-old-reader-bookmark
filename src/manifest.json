@@ -10,7 +10,7 @@
     "16": "icons/oldreadericon-16.png",
     "32": "icons/oldreadericon-32.png",
     "48": "icons/oldreadericon-48.png",
-    "64": "icons/oldreadericon-67.png"
+    "64": "icons/oldreadericon-64.png"
   },
 
   "applications": {
@@ -30,7 +30,7 @@
     "16": "icons/oldreadericon-16.png",
     "32": "icons/oldreadericon-32.png",
     "48": "icons/oldreadericon-48.png",
-    "64": "icons/oldreadericon-67.png"
+    "64": "icons/oldreadericon-64.png"
     },
     "default_title": "The Old Reader - Bookmark"
   },
