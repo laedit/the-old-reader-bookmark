@@ -4,3 +4,5 @@ web-ext-artifacts
 # Dependency directories
 node_modules
 
+# only .ts files are allowed
+**/*.js
