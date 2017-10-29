@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "The Old Reader Bookmark",
-  "version": "0.3",
+  "version": "0.4",
   "description": "__MSG_addonDescription__",
   "homepage_url": "https://github.com/laedit/the-old-reader-bookmark/",
   "default_locale": "en",
@@ -22,7 +22,8 @@
 
   "permissions": [
     "activeTab",
-    "<all_urls>"
+    "<all_urls>",
+    "storage"
   ],
 
   "browser_action": {
@@ -37,6 +38,18 @@
 
   "background": {
     "scripts": ["background-script.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.theoldreader.com/*"],
+      "js": ["settings.js", "content_scripts/bookmarkBadge.js"]
+    }
+  ],
+
+  "options_ui": {
+      "page": "options.html",
+      "browser_style": true
   }
 
 }
