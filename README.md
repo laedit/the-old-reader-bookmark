@@ -1,6 +1,8 @@
 the-old-reader-bookmark
 =======================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/laedit/the-old-reader-bookmark.svg)](https://greenkeeper.io/)
+
 The Old Reader Bookmark addin for Firefox
 
 https://addons.mozilla.org/fr/firefox/addon/the-old-reader-bookmark/
