@@ -9,7 +9,7 @@ function handleClick(tab: browser.tabs.Tab): void {
                 browser.tabs.create({ index: tab.index + 1, url: "about:blank" })
                     .then(newTab => {
                         browser.tabs.executeScript(newTab.id, { matchAboutBlank: true, file: "content_scripts/postNewBookmark.js" })
-                            .then(_ => {
+                            .then(() => {
                                 browser.tabs.sendMessage(newTab.id!, { url: tab.url, html: selections });
                             });
                     });
